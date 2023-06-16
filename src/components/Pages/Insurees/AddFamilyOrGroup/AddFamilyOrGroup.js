@@ -3,7 +3,9 @@ import React from "react";
 import SaveAndReset from "./SaveAndReset";
 import IndividualSave from "./IndividualSave";
 import { InputLabel, MenuItem, Select } from "@mui/material";
-import FamilyGroup from "./FamilyGroup";
+import FamilyGroup from "./FamilyGroup/FamilyGroup";
+import HeadInsuree from "./HeadInsuree/HeadInsuree";
+import FirstServicePoint from "./FirstServicePoint/FirstServicePoint";
 
 const AddFamilyOrGroup = () => {
   return (
@@ -16,8 +18,8 @@ const AddFamilyOrGroup = () => {
         <SaveAndReset />
         <div className="w-full flex flex-wrap justify-between items-start mt-5">
           <FamilyGroup />
-          <FamilyGroup />
-          <FamilyGroup />
+          <HeadInsuree />
+          <FirstServicePoint />
         </div>
       </div>
     </>
