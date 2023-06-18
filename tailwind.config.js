@@ -20,8 +20,12 @@ module.exports = {
         red: {
           custom: "#FF0000",
         },
+        sky: {
+          custom: "#24A0ED",
+        },
         blue: {
           active: "#22aeaa",
+          dark: "#0000FF",
         },
         yellow: {
           custom: "#FFB61E",
