@@ -31,6 +31,18 @@ const sectionData = [
         title: "Policies",
         route: "/policies",
       },
+      {
+        title: "Contributions",
+        route: "/contributions",
+      },
+      {
+        title: "Payments",
+        route: "/payments",
+      },
+      {
+        title: "Policy Holders",
+        route: "/policy-holders",
+      },
     ],
   },
   {
