@@ -2,8 +2,8 @@ import React from "react";
 
 const SearchFields = () => {
   return (
-    <div className="w-full flex flex-wrap justify-between items-start mt-5 bg-white">
-      <div className="min-w-[365px] w-[28%] shadow-lg">
+    <div className="w-full flex flex-wrap justify-between items-start my-5 bg-white rounded-[10px] shadow-lg ">
+      <div className="min-w-[365px] w-[28%] ">
         <div className="w-full h-[600px] overflow-y-auto  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
           <Selector name={"region"} title={"Region"} />
           <Selector name={"state"} title={"State"} />
@@ -21,7 +21,7 @@ const SearchFields = () => {
           </div>
         </div>
       </div>
-      <div className="min-w-[365px] w-[28%] shadow-lg">
+      <div className="min-w-[365px] w-[28%] ">
         <div className="w-full h-[600px] overflow-y-auto  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
           <CustomTextInput name={"head_ins_no"} label={"Head Ins No"} />
           <CustomTextInput name={"head_last_name"} label={"Head Last Name"} />
@@ -41,7 +41,7 @@ const SearchFields = () => {
           <CustomTextInput name={"head_birth_to"} label={"Head Birth To"} />
         </div>
       </div>
-      <div className="min-w-[365px] w-[28%] shadow-lg">
+      <div className="min-w-[365px] w-[28%] ">
         <div className="w-full h-[600px] overflow-y-auto  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
           <CustomTextInput name={"member_ins_no"} label={"Member Ins No"} />
           <CustomTextInput
