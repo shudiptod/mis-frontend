@@ -31,7 +31,16 @@ const SearchFields = () => {
         <div className="w-full  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
           <CustomTextInput name={"email"} label={"Email"} />
           <CustomTextInput name={"phone"} label={"Phone"} />
-          <CustomTextInput name={"birthday_from"} label={"birthday_to"} />
+          <CustomTextInput
+            type="date"
+            name={"birthday_from"}
+            label={"Birthday From"}
+          />
+          <CustomTextInput
+            type="date"
+            name={"birthday_to"}
+            label={"Birthday To"}
+          />
           <Selector name={"photo_status"} title={"Photo Status"} />
         </div>
       </div>

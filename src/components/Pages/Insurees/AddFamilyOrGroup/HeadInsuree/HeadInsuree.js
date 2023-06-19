@@ -1,6 +1,5 @@
 import React from "react";
 import IndividualSave from "../IndividualSave";
-import { InputLabel, MenuItem, Select } from "@mui/material";
 
 const HeadInsuree = () => {
   return (
@@ -10,7 +9,7 @@ const HeadInsuree = () => {
         <Selector name={"insurance_no"} title={"Insurance no"} />
         <Selector name={"last_name"} title={"Last name"} />
         <Selector name={"given_name"} title={"Given name"} />
-        <Selector name={"birthdate"} title={"Birthdate"} />
+        <CustomTextInput type="date" name={"birthdate"} label={"Birthdate"} />
         <Selector name={"gender"} title={"Gender"} />
         <Selector name={"marital_status"} title={"Marital Status"} />
         <div>
@@ -91,6 +90,19 @@ const Selector = ({ name, title }) => {
           3
         </option>
       </select>
+    </div>
+  );
+};
+
+const CustomTextInput = ({ label, name, type = "text" }) => {
+  return (
+    <div>
+      <label>{label}</label>
+      <input
+        name={name}
+        type={type}
+        className="l w-full outline-none focus:outline-none focus:ring-0 border-b border-black-800/60 py-1"
+      />
     </div>
   );
 };

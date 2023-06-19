@@ -37,8 +37,16 @@ const SearchFields = () => {
             label={"Head Email"}
             type="email"
           />
-          <CustomTextInput name={"head_birth_from"} label={"Head Birth From"} />
-          <CustomTextInput name={"head_birth_to"} label={"Head Birth To"} />
+          <CustomTextInput
+            type="date"
+            name={"head_birth_from"}
+            label={"Head Birth From"}
+          />
+          <CustomTextInput
+            type="date"
+            name={"head_birth_to"}
+            label={"Head Birth To"}
+          />
         </div>
       </div>
       <div className="min-w-[365px] w-[28%] ">
@@ -64,10 +72,15 @@ const SearchFields = () => {
             type="email"
           />
           <CustomTextInput
+            type="date"
             name={"member_birth_from"}
             label={"Member Birth From"}
           />
-          <CustomTextInput name={"member_birth_to"} label={"Member Birth To"} />
+          <CustomTextInput
+            type="date"
+            name={"member_birth_to"}
+            label={"Member Birth To"}
+          />
         </div>
       </div>
     </div>
