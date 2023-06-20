@@ -2,15 +2,20 @@ import React from "react";
 
 const SearchFields = () => {
   return (
-    <div className="w-full flex flex-wrap justify-between items-start my-5 bg-white rounded-[10px] shadow-lg max-h-[600px] overflow-y-auto">
+    <div className="w-full flex flex-wrap justify-between items-start my-5 bg-white rounded-[10px] shadow-lg ">
       <div className="min-w-[360px] w-[28%] ">
         <div className="w-full   text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
-          <Selector name={"region"} title={"Region"} />
-          <Selector name={"state"} title={"State"} />
-          <Selector name={"lga"} title={"LGA"} />
-          <Selector name={"Ward"} title={"Ward"} />
+          <Selector name={"payment_type"} title={"Payment Type"} />
+          <Selector name={"status"} title={"Status"} />
+          <CustomTextInput name={"receipt_no"} label={"Receipt No"} />
           <div className="flex items-center justify-start gap-4">
-            <input type="checkbox" name="poverty_status" />
+            <input type="checkbox" name="show_reconciled" />
+            <label className="text-sm text-sidebar font-semibold capitalize">
+              Show Reconciled Only
+            </label>
+          </div>
+          <div className="flex items-center justify-start gap-4">
+            <input type="checkbox" name="show_historical" />
             <label className="text-sm text-sidebar font-semibold capitalize">
               show historical values
             </label>
@@ -20,37 +25,50 @@ const SearchFields = () => {
       <div className="min-w-[360px] w-[28%] ">
         <div className="w-full  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
           <CustomTextInput
-            name={"payment_date_from"}
-            label={"Payment Date From"}
+            name={"request_date_from"}
+            label={"Request Date From"}
             type="date"
           />
           <CustomTextInput
-            name={"payment_date_to"}
-            label={"Payment Date To"}
+            name={"request_date_to"}
+            label={"Request Date To"}
             type="date"
           />
-          <Selector name={"payer"} title={"Payer"} />
-          <Selector name={"payment_type"} title={"Payment Type"} />
+          <CustomTextInput
+            name={"received_date_from"}
+            label={"Received Date From"}
+            type="date"
+          />
+          <CustomTextInput
+            name={"received_date_to"}
+            label={"Received Date to"}
+            type="date"
+          />
         </div>
       </div>
       <div className="min-w-[360px] w-[28%] ">
         <div className="w-full  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
           <CustomTextInput
             type="number"
-            name={"balance_under"}
-            label={"Balance Under ($)"}
+            name={"balance_above"}
+            label={"Expected Balance Above ($)"}
           />
           <CustomTextInput
             type="number"
-            name={"balance_above"}
-            label={"Balance Above ($)"}
-          />
-          <Selector
-            name={"contribution_category"}
-            title={"Contribution Category"}
+            name={"balance_under"}
+            label={"Expected Balance Under ($)"}
           />
 
-          <CustomTextInput name={"receipt_no"} label={"Receipt No."} />
+          <CustomTextInput
+            type="number"
+            name={"received_above"}
+            label={"Received Balance Above ($)"}
+          />
+          <CustomTextInput
+            type="number"
+            name={"received_under"}
+            label={"Received Balance Under ($)"}
+          />
         </div>
       </div>
     </div>

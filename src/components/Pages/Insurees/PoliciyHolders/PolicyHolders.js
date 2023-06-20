@@ -1,28 +1,27 @@
 import PageSubtitle from "@/components/Common/PageSubtitle/PageSubtitle";
 import PageTitle from "@/components/Common/PageTitle/PageTitle";
 import React from "react";
-import { BiDollar } from "react-icons/bi";
+import { GrDocumentText } from "react-icons/gr";
 import SearchCriteria from "./SearchCriteria";
 import SearchFields from "./SearchFields";
 import TotalDisplay from "@/components/Common/TotalDisplay/TotalDisplay";
-import ContributionsTable from "./ContributionsTable";
-
-const Contributions = () => {
+import PolicyHoldersTable from "./PolicyHoldersTable";
+const PolicyHolders = () => {
   return (
     <>
-      <PageTitle title={"Insurees and Policies"} subtitle={"contributions"} />
+      <PageTitle title={"Insurees and Policies"} subtitle={"Policy Holders"} />
       <div className="px-4 w-full">
         <PageSubtitle
-          title={"contributions"}
-          icon={<BiDollar className="w-5 h-5 text-sidebar" />}
+          title="Policy Holders"
+          icon={<GrDocumentText className="w-5 h-5 text-sidebar" />}
         />
         <SearchCriteria />
         <SearchFields />
-        <TotalDisplay label={"Contributions"} />
-        <ContributionsTable />
+        <TotalDisplay label={"Policy Holders"} />
+        <PolicyHoldersTable />
       </div>
     </>
   );
 };
 
-export default Contributions;
+export default PolicyHolders;

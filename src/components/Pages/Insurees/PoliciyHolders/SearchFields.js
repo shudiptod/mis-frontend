@@ -2,55 +2,43 @@ import React from "react";
 
 const SearchFields = () => {
   return (
-    <div className="w-full flex flex-wrap justify-between items-start my-5 bg-white rounded-[10px] shadow-lg max-h-[600px] overflow-y-auto">
+    <div className="w-full flex flex-wrap justify-between items-start my-5 bg-white rounded-[10px] shadow-lg ">
       <div className="min-w-[360px] w-[28%] ">
         <div className="w-full   text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
-          <Selector name={"region"} title={"Region"} />
-          <Selector name={"state"} title={"State"} />
-          <Selector name={"lga"} title={"LGA"} />
-          <Selector name={"Ward"} title={"Ward"} />
+          <Selector name={"code"} title={"COde"} />
+          <Selector name={"trade_name"} title={"Trade Name"} />
+
           <div className="flex items-center justify-start gap-4">
-            <input type="checkbox" name="poverty_status" />
+            <input type="checkbox" name="show_deleted" />
             <label className="text-sm text-sidebar font-semibold capitalize">
-              show historical values
+              Show Deleted
             </label>
           </div>
         </div>
       </div>
       <div className="min-w-[360px] w-[28%] ">
         <div className="w-full  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
-          <CustomTextInput
-            name={"payment_date_from"}
-            label={"Payment Date From"}
-            type="date"
-          />
-          <CustomTextInput
-            name={"payment_date_to"}
-            label={"Payment Date To"}
-            type="date"
-          />
-          <Selector name={"payer"} title={"Payer"} />
-          <Selector name={"payment_type"} title={"Payment Type"} />
+          <Selector name={"region"} title={"Region"} />
+          <Selector name={"state"} title={"State"} />
+          <Selector name={"lga"} title={"LGA"} />
+          <Selector name={"ward"} title={"Ward"} />
         </div>
       </div>
       <div className="min-w-[360px] w-[28%] ">
         <div className="w-full  text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
-          <CustomTextInput
-            type="number"
-            name={"balance_under"}
-            label={"Balance Under ($)"}
-          />
-          <CustomTextInput
-            type="number"
-            name={"balance_above"}
-            label={"Balance Above ($)"}
-          />
-          <Selector
-            name={"contribution_category"}
-            title={"Contribution Category"}
-          />
+          <Selector name={"legal_form"} title={"Legal Form"} />
+          <Selector name={"activity_code"} title={"Activity Code"} />
 
-          <CustomTextInput name={"receipt_no"} label={"Receipt No."} />
+          <CustomTextInput
+            type="date"
+            name={"date_valid_from"}
+            label={"Date Valid From"}
+          />
+          <CustomTextInput
+            type="date"
+            name={"date_valid_to"}
+            label={"Date Valid To"}
+          />
         </div>
       </div>
     </div>
