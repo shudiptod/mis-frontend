@@ -33,7 +33,7 @@ const DropdownButton = ({ router, item }) => {
         />
 
         <span>{item.title}</span>
-        <IoCaretDownOutline className="justify-self-end" />
+        <IoCaretDownOutline className="justify-self-end ml-auto" />
       </button>
       {drop === true && (
         <div className="flex flex-col gap-2 items-start pl-10">

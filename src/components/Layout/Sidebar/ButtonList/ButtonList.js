@@ -50,6 +50,20 @@ const sectionData = [
     logo: "/images/button-list/claim.svg",
     logo_selected: "/images/button-list/claim-selected.svg",
     route: "/claims",
+    subSections: [
+      {
+        title: "Health Facility Claims",
+        route: "/health-facility-claims",
+      },
+      {
+        title: "Reviews",
+        route: "/reviews",
+      },
+      {
+        title: "Batch Runs",
+        route: "/batch-runs",
+      },
+    ],
   },
   {
     title: "Administration",
