@@ -99,7 +99,7 @@ const ButtonList = () => {
           <Link
             key={index}
             href={item.route}
-            className={`w-full px-4 py-3 flex justify-start gap-6 text-sm ${
+            className={`w-full px-4 py-3 flex justify-start gap-3 text-sm ${
               router.asPath === item.route
                 ? "bg-active border-l-4 border-blue-active text-blue-active"
                 : ""
