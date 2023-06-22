@@ -5,7 +5,7 @@ const SearchFields = () => {
     <div className="w-full flex flex-wrap justify-between items-start my-5 bg-white rounded-[10px] shadow-lg ">
       <div className="min-w-[360px] w-[28%] ">
         <div className="w-full   text-black-800 mt-5 rounded-[10px] p-4 text-[15px] flex flex-col gap-4 ">
-          <Selector name={"code"} title={"COde"} />
+          <Selector name={"code"} title={"Code"} />
           <Selector name={"trade_name"} title={"Trade Name"} />
 
           <div className="flex items-center justify-start gap-4">
