@@ -56,7 +56,7 @@ const rows = [
   ),
 ];
 
-const ProductsTable = () => {
+const HealthFacilitiesTable = () => {
   return (
     <div className="w-full my-5">
       <table className="w-full table-auto text-left  ">
@@ -110,4 +110,4 @@ const ProductsTable = () => {
   );
 };
 
-export default ProductsTable;
+export default HealthFacilitiesTable;
