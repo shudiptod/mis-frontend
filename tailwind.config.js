@@ -16,6 +16,7 @@ module.exports = {
         },
         gray: {
           custom: "#dbdbd9",
+          upload: "#EAEAE4",
         },
         red: {
           custom: "#FF0000",

@@ -55,3 +55,17 @@ body::-webkit-scrollbar-thumb {
   background-clip: content-box;
   @apply bg-brand;
 }
+
+.table-registers tr {
+  @apply rounded-[10px] h-[60px] bg-white text-sidebar border  !important;
+  border-collapse: separate !important;
+  border-spacing: 10px !important;
+}
+.table-registers tr th,
+td {
+  @apply p-5 text-[15px];
+}
+
+.table-registers tr td {
+  @apply text-sm;
+}

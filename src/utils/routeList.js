@@ -122,7 +122,21 @@ export const routeLIst = [
     title: "Tools",
     logo: "/images/button-list/tools.svg",
     logo_selected: "/images/button-list/tools-selected.svg",
-    route: "tools",
+    route: "/tools",
+    subSections: [
+      {
+        title: "Registers",
+        route: "/registers",
+      },
+      {
+        title: "Extracts",
+        route: "/extracts",
+      },
+      {
+        title: "Reports",
+        route: "/reports",
+      },
+    ],
   },
   {
     title: "Legal & Finance",
