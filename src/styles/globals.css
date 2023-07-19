@@ -56,7 +56,11 @@ body::-webkit-scrollbar-thumb {
   @apply bg-brand;
 }
 
-.table-registers tr {
+/* tr td {
+    @apply text-[10px];
+  } */
+
+/* .table-registers tr {
   @apply rounded-[10px] h-[60px] bg-white text-sidebar border  !important;
   border-collapse: separate !important;
   border-spacing: 10px !important;
@@ -68,4 +72,4 @@ td {
 
 .table-registers tr td {
   @apply text-sm;
-}
+} */

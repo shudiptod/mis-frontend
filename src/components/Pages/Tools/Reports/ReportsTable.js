@@ -48,18 +48,14 @@ const rows = [
 
 const ReportsTable = () => {
   const [data, setData] = useState([...rows]);
-  console.log("🚀 ~ file: ReportsTable.js:46 ~ ReportsTable ~ data:", data);
+
   const [allSelected, setAllSelected] = useState(false);
-  console.log(
-    "🚀 ~ file: ReportsTable.js:47 ~ ReportsTable ~ allSelected:",
-    allSelected
-  );
+
   const toggleAll = () => {
     setData((state) => {
       for (let item of state) {
         item.selected = !allSelected;
       }
-      console.log("🚀 ~ file: ReportsTable.js:50 ~ setData ~ state:", state);
       return state;
     });
     setAllSelected((state) => !state);
@@ -68,14 +64,9 @@ const ReportsTable = () => {
   const toggleOne = (e, index) => {
     setData((state) => {
       let temp = [...state];
-      for (let i = 0; i < temp.length; i++) {
-        if (index === state[i]["id"]) {
-          temp[i]["selected"] = !temp[i]["selected"];
-        }
-      }
+      temp[index - 1]["selected"] = e.target.checked;
       return temp;
     });
-    console.log(data);
   };
 
   return (
